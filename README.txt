@@ -1,0 +1,1 @@
+A website for my Ranch in a REDM server, functioning as a fun prototype website for further projects.
