@@ -1,0 +1,66 @@
+/* Titel */
+@font-face {
+    font-family: 'Roadstore';
+    src: url('fonts/ROADSTORE Dafont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.header-box {
+    font-family: 'Roadstore', serif;
+}
+/* untertitel */
+@font-face {
+    font-family: 'Roadstore';
+    src: url('fonts/ROADSTORE Dafont.otf.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roadstore', serif;
+    background-color: #f5f0e6; /* Staubiger Western-Hintergrund */
+}
+
+.header-box {
+    background-color: #8B5A2B; /* Sattlerbraun */
+    color: #fff8dc; /* Maisweiß */
+    padding: 25px 10px 15px 10px;
+    text-align: center;
+    font-size: 3em;
+    font-weight: bold;
+    border-bottom: 5px solid #A0522D; /* Sienna */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    letter-spacing: 2px;
+}
+
+.subtext {
+    font-family: 'Roadstore', serif; /* oder eine andere Western-Schrift */
+    font-size: 0.4em; /* kleiner als der Haupttitel */
+    color: #fff8dc; /* gleiche Farbe wie der Haupttitel */
+    margin-top: 5px; /* etwas Abstand nach oben */
+    letter-spacing: 0.1em; /* für bessere Lesbarkeit der Punkte */
+}
+.subtext span:not(:last-child)::after {
+    content: " • ";
+    font-family: Arial, sans-serif;
+}
+/* Horseshoe Logo*/
+.image-container {
+  display: flex;            /* Flexbox nutzen */
+  position: relative;
+  top: 40vh;
+  justify-content: center;  /* horizontal zentrieren */
+  align-items: center;      /* vertikal zentrieren, wenn Höhe definiert */
+  height: 20px;            /* Höhe der Box, passt ihr an */
+  margin: 20px auto;        /* oben/unten Abstand und zentriert */
+}
+
+.image-container img {
+  max-width: 40%;          /* Bild maximal so breit wie Container */
+  height: auto;             /* Höhe proportional */
+  border: 5px solid #8B5A2B; /* optional: schöner Rahmen in braun */
+  border-radius: 10px;       /* optionale abgerundete Ecken */
+  box-shadow: 0 0 15px rgba(0,0,0,0.3); /* leichter Schatten */
+}
